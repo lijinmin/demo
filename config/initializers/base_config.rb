@@ -1,0 +1,3 @@
+#es 配置
+$elastic = Elasticsearch::Client.new hosts: [{:host=>"172.16.0.11", :port=>9200, :user=>"elastic", :password=>"changeme", :protocol=>"http"}, {:host=>"172.16.0.12", :port=>9200, :user=>"elastic", :password=>"changeme", :protocol=>"http"}, {:host=>"172.16.0.13", :port=>9200, :user=>"elastic", :password=>"changeme", :protocol=>"http"}, {:host=>"172.16.0.14", :port=>9200, :user=>"elastic", :password=>"changeme", :protocol=>"http"}], randomize_hosts: true, log: false
+Elasticsearch::Model.client = $elastic

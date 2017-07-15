@@ -1,0 +1,14 @@
+<h1>lakdfd</h1>
+<a href="/users/sign_out" data-method="DELETE">退出</a>
+<br>
+<%= check_box_tag(:pet_dog,'') %>
+<%= label_tag(:pet_dog, "I own a dog") %>
+<%= check_box_tag(:pet_cat) %>
+<%= label_tag(:pet_cat, "I own a cat") %>
+<br>
+<%=label_tag(:current_user,"#{current_user.email}")%>
+<br>
+<%=label_tag(:current_role,"#{current_role}")%>
+<br>
+<%=label_tag(:current_ability,"cancancan") if can?(:update, User,id:2)%>
+

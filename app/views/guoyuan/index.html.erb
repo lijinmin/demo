@@ -1,0 +1,43 @@
+<div class="Banner">
+  <ul id="fcimg">
+    <a href="" target="_blank">
+    <li style="background:url(/assets/20140628050634ban.jpg) no-repeat center 0px;"></li>
+    </a> <a href="" target="_blank">
+    <li style="background:url(/assets/20140628050709ban2.jpg) no-repeat center 0px;"></li>
+    </a>
+  </ul>
+</div>
+<div class="Content">
+  <div class="Roll">
+    <ul>
+      {dede:arclist row='1' typeid='7' titlelen='36' flag='c'}
+      <li><span> [field:pubdate function=strftime('%m月%d日',@me)/]</span>[新闻资讯]<a href="[field:arcurl/]">[field:title/]</a></li>
+      {/dede:arclist}
+    </ul>
+  </div>
+  <div class="Ctxt"> {dede:arclist addfields='jdjs' row=3 typeid='11' channelid='17'}
+    <div class="Cconn">
+      <p class="p1"><b>[field:title/]</b><img src="/assets/icoe_1.gif" /></p>
+      <p class="p2">[field:jdjs/] </p>
+      <p class="p3"><a href="[field:arcurl/]"><img src="[field:litpic/]" width="210" height="120" border="0" /></a></p>
+    </div>
+    {/dede:arclist}
+    <div class="Cnews">
+      <div class="Cnav">
+        <ul>
+          <li id="Hnews1" onmouseover="Snews(1)" class="on"><a href="new_yq" id="H1" class="on">园区动态</a></li>
+          <li id="Hnews2" onmouseover="Snews(2)"><a href="new_0" id="H2">公司动态</a></li>
+        </ul>
+      </div>
+      <div class="Ccont"> {dede:arclist row='1' typeid='9' titlelen='36' flag='a'} <span id="N1" style="display:;">
+        <p class="p5">[field:description function='cn_substr(@me,200)'/]... </p>
+        <p class="p6"><a href="[field:arcurl/]"><img src="[field:litpic/]" width="314" height="100" border="0" /></a></p>
+        </span> {/dede:arclist} 
+        
+        {dede:arclist row='1' typeid='8' titlelen='36' flag='a'} <span id="N2" style="display:none;">
+        <p class="p5">[field:description function='cn_substr(@me,200)'/]... </p>
+        <p class="p6"><a href="[field:arcurl/]"><img src="[field:litpic/]" width="314" height="100" border="0" /></a></p>
+        </span> {/dede:arclist} </div>
+    </div>
+  </div>
+</div>
