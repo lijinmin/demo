@@ -46,10 +46,10 @@ Rails.application.configure do
   #config.action_mailer.default_url_options = { host: "http://localhost:3000" }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-      :address => "smtp.exmail.qq.com",
+      :address => "smtp.qq.com",
       :port => "25", #465
-      :domain => "exmail.qq.com",
-      :user_name => "lijinmin@xjgreat.com",
+      :domain => "mail.qq.com",
+      :user_name => "1005277881@qq.com",
       :password => "Li492879593",
       :authentication => "plain",
       :enable_starttls_auto => true}
