@@ -64,7 +64,7 @@ Rails.application.routes.draw do
     end
   end
 
-  root "admin/user#index"
+  root "guoyuan#index"
 
   # resources :lixiaolin do 
   #   collection do 
