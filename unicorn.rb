@@ -34,7 +34,7 @@ before_fork do |server, worker|
 
 end
 
-after_fork do |server, worker|
-  MessageBus.after_fork
-end
+# after_fork do |server, worker|
+#   MessageBus.after_fork
+# end
 
