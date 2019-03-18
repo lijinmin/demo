@@ -50,7 +50,7 @@ Rails.application.configure do
       :port => "25", #465
       :domain => "mail.qq.com",
       :user_name => "1005277881@qq.com",
-      :password => "Li492879593",
+      :password => "xxxxx",
       :authentication => "plain",
       :enable_starttls_auto => true}
 end
